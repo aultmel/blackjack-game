@@ -16,17 +16,17 @@ public class BlackjackCurrent {
 		System.out.println("If you tie with the dealer, the dealer wins.");
 		System.out.println("Got it? Let's go!");
 		String[] playerHand = playerStarterHand(2);
-		while (playerHand[0] == playerHand[1]) {
+		while (playerHand[0].equals(playerHand[1])) {
 			playerHand = playerStarterHand(2);
 		}
 		String[] dealerHand = playerStarterHand(2);
-		while (dealerHand[0] == dealerHand[1]) {
+		while (dealerHand[0].equals(dealerHand[1])) {
 			dealerHand = playerStarterHand(2);
 		}
-		while (playerHand[0] == dealerHand[0] || playerHand[0] == dealerHand[1]) {
+		while (playerHand[0].equals(dealerHand[0]) || playerHand[0].equals(dealerHand[1])) {
 			dealerHand = playerStarterHand(2);
 		}
-		while (playerHand[1] == dealerHand[0] || playerHand[1] == dealerHand[1]) {
+		while (playerHand[1].equals(dealerHand[0]) || playerHand[1].equals(dealerHand[1])) {
 			dealerHand = playerStarterHand(2);
 		}
 		playGame(playerHand, dealerHand);

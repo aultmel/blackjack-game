@@ -283,6 +283,30 @@ public class BlackjackCurrent {
 				}
 			}
 		}
+		for (int i = 0; i < x.length; i++) {
+			if (value[i] == 1) {
+				if (sum + 10 <= 21) {
+					value[i] = 11;
+					sum += 10;
+				}
+			}
+		}
+		for (int i = 0; i < x.length; i++) {
+			if (value[i] == 1) {
+				if (sum + 10 <= 21) {
+					value[i] = 11;
+					sum += 10;
+				}
+			}
+		}
+		for (int i = 0; i < x.length; i++) {
+			if (value[i] == 1) {
+				if (sum + 10 <= 21) {
+					value[i] = 11;
+					sum += 10;
+				}
+			}
+		}
 		return sum;
 	}
 	public static String[] playerStarterHand(int n) {
